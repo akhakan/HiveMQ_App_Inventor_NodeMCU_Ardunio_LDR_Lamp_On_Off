@@ -1,0 +1,3 @@
+UrsPahoMqttClient.aix eklentisi appinventor uygulamasına extension olarak eklenecek.
+
+https://ullisroboterseite.de/android-AI2-PahoMQTT.html adresinden download edilecek.
