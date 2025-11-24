@@ -4,6 +4,20 @@ Bu dosya NodeMCU’nun HiveMQ’ya bağlanması, LDR okumaları göndermesi ve A
 
 ## 🟦 1) Kod Dosyası
 
+Kodu Ardunio IDE'ye attıktan sonra: ***** içeren kısımlar yazılımı yükleyen kişinin değerleriyle değiştirilmelidir.
+
+```cpp
+// ---- WiFi Ayarları ----
+const char* ssid = "***********************";
+const char* password = "*******************";
+
+// ---- HiveMQ Cloud ----
+const char* mqtt_server = "****************************.s1.eu.hivemq.cloud";
+const int mqtt_port = 8883;
+const char* mqtt_user = "****************";
+const char* mqtt_pass = "****************"; 
+```
+
 Kodun tamamı:
 `src/ldr_btn_mqtt.ino`
 
@@ -136,7 +150,7 @@ void loop() {
 A0 pininden analog değer okunur.
 Veri publish edilir:
 
-```
+```cpp
 client.publish("esp8266/ldr", String(ldrValue).c_str());
 ```
 
