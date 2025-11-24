@@ -31,12 +31,11 @@ Bu doküman App Inventor içinde yapılan tasarım ve blok yapısını açıklar
 </tr>
 </table>
 
-
 ## 🟦 2) Blok Kodlama
 
 ### MQTT Bağlantısı
 
-MQTT bağlantısını gerçekleştirebilmek için UrsPahoMqttClient.aix eklentisinin App Inventor projesine eklenmesi gerekmektedir.
+MQTT bağlantısını gerçekleştirebilmek için <strong>UrsPahoMqttClient.aix</strong> eklentisinin App Inventor projesine eklenmesi gerekmektedir.
 Öncelikle eklentiyi indirmek için şu bağlantıya tıklayın:
 [UrsPahoMqttClient.aix indirme sayfası](https://ullisroboterseite.de/android-AI2-PahoMQTT.html)
 
@@ -78,22 +77,113 @@ Extensions → Import Extension → Choose File adımlarını izleyerek .aix dos
 </tr>
 </table>
 
+# App Inventor – MQTT Bloklarının Ayrıntılı Açıklaması
 
+Aşağıdaki bloklar, uygulamanın MQTT bağlantısını yönetme, LDR değerini alma ve lambayı kontrol etme işlevlerini yerine getirir. Her blok kendi görseliyle birlikte ayrı bölümde açıklanmıştır.
 
-### LDR Değerini Dinleme
+---
 
-`esp8266/ldr` subscribe edilir.
-Gelen değer Label içinde güncellenir.
+## 1️⃣ MQTT Oturum Kontrolü – `Button1.Click`
 
-### Lamba Kontrolü
+Kullanıcı butona bastığında MQTT broker’a bağlanma veya bağlantıyı kesme işlemi burada yönetilir.
 
-Image tıklandığında:
+### 📷 Blok Görseli
 
-- Eğer kapalı → `"ON"` publish edilir
-- Eğer açık → `"OFF"` publish edilir
-
-📷 Blok görselleri:
-![UrsPahoMqttClient1 ConnectionStateChanged](../assets/appinventor/UrsPahoMqttClient1.ConnectionStateChanged.png)
-![UrsPahoMqttClient1 MessageRecieved](../assets/appinventor/UrsPahoMqttClient1.MessageRecieved.png)
 ![Buton1 Click](../assets/appinventor/Buton1.Click.png)
+
+### 🔍 Teknik Açıklama
+- **IsConnected** → MQTT istemcisinin broker ile aktif oturumu var mı?
+- **Connect()** → TLS kullanarak güvenli MQTT bağlantısı kurar.
+- **Disconnect()** → Mevcut MQTT oturumunu temiz şekilde kapatır.
+- **CleanSession = true**  
+  - Önceki MQTT oturumu silinir.  
+  - Eski abonelikler ve bekleyen mesajlar temizlenir.
+
+### 🧠 Ne İşe Yarar?
+Kullanıcı uygulamadan HiveMQ Cloud’a bağlanır → Arduino verileri gönderebilir, uygulama mesaj alabilir.
+
+---
+
+## 2️⃣ Bağlantı Durumu İzleme ve Abone Olma – `UrsPahoMqttClient1.ConnectionStateChanged`
+
+Bu blok, bağlantı kurulunca veya kopunca otomatik tetiklenir.
+
+### 📷 Blok Görseli
+
+![UrsPahoMqttClient1 ConnectionStateChanged](../assets/appinventor/UrsPahoMqttClient1.ConnectionStateChanged.png)
+
+### 🔍 Teknik Açıklama
+
+**Bağlantı başarılı ise:**
+- `Button1.Text` ine **BAĞLANTIYI KES** yazılır.
+- `esp8266/ldr` topic’ine **Subscribe** edilir.
+- **QoS = 0** → hızlı, tekrarsız, “best effort” iletim.
+
+**Bağlantı başarısız ise:**
+- `Button1.Text` ine **BAĞLAN** yazılır.
+
+### 🧠 Ne İşe Yarar?
+Uygulama broker’a bağlandığını anlar → sensör verilerini almaya başlar.
+
+---
+
+## 3️⃣ LDR Değerini Dinleme – `UrsPahoMqttClient1.MessageReceived`
+
+ESP8266 tarafından gönderilen LDR ölçüm değeri burada yakalanır.
+
+### 📷 Blok Görseli
+
+![UrsPahoMqttClient1 MessageRecieved](../assets/appinventor/UrsPahoMqttClient1.MessageRecieved.png)
+
+### 🔍 Teknik Açıklama
+
+| Parametre | Açıklama |
+|----------|----------|
+| **Topic** | Mesajın geldiği MQTT kanalı |
+| **Message / Payload** | Gönderilen veri içeriği (örn: `"412"`) |
+| **RetainFlag** | Broker mesajı saklıyor mu? |
+| **DupFlag** | Mesaj tekrar mı gönderildi? |
+
+### 🧠 Ne İşe Yarar?
+- **Topic `esp8266/ldr` ise** → gelen veri LDR ölçümüdür.  
+- Bu değer Label4 üzerinde gösterilir.  
+- Arduino genelde her 2–3 saniyede bir LDR değeri yayınlar → App Inventor bu blokta yakalar.
+
+---
+
+## 4️⃣ Lamba Kontrolü – `Image1.Click`
+
+Kullanıcı lamba resmine tıkladığında ESP8266’ya `"ON"` veya `"OFF"` komutu gönderilir.
+
+### 📷 Blok Görseli
+
 ![Image1 Click](../assets/appinventor/Image1.Click.png)
+
+### 🔍 Teknik Açıklama
+İki görsel durum bulunur:
+
+- `turnon.png` → lamba **açık**
+- `turnoff.png` → lamba **kapalı**
+
+Tıklama sonrası:
+
+- Eğer lamba kapalı ise `"esp8266/client"` → `"ON"` publish edilir → Görsel(Image1.Picture) açık lambayla değiştirilir → “Lamba Açık” yazısı Label2.Text'te güncellenir
+- Eğer lamba açık ise `"esp8266/client"` → `"OFF"` publish edilir → Görsel(Image1.Picture) kapalı lambayla değiştirilir → “Lamba Kapalı” yazısı Label2.Text'te güncellenir
+- Eğer bağlantı yoksa → Bildirimde “MQTT aracısına bağlanamadı” mesajı görüntülenir
+
+### 🧠 Ne İşe Yarar?
+- `"esp8266/client" → "ON"` → Arduino LED pini HIGH → lamba yanar  
+- `"esp8266/client" → "OFF"` → Arduino LED pini LOW → lamba söner  
+
+App Inventor üzerinden gerçek donanım kontrolü bu blok sayesinde yapılır.
+
+---
+
+# 📌 Özet Tablo
+
+| Blok | Amacı | Topic | Yayın / Abone | Beklenen Payload |
+|------|--------|--------|----------------|------------------|
+| **Button1.Click** | MQTT Connect / Disconnect | — | — | — |
+| **ConnectionStateChanged** | Bağlantı sonrası abonelik | `esp8266/ldr` | Subscribe (QoS0) | — |
+| **MessageReceived** | Gelen LDR değerini ekrana yaz | `esp8266/ldr` | Alıcı | `"412"` (string sayı) |
+| **Image1.Click** | Lambayı aç/kapa komutu gönder | `esp8266/client` | Publish | `"ON"` / `"OFF"` |
