@@ -49,24 +49,26 @@ Bu doküman App Inventor içinde yapılan tasarım ve blok yapısını açıklar
 </ul>
 </td>
 <td>
+<strong>📷 Görsel 3:</strong><br>
+<img src="../assets/appinventor/UrsPahoMqttClient1.jpg" height="473" width="84">
+</td>
+</tr>
+<tr>
+<td>
 <table>
 <tr>
 <td>
 <strong>📷 Görsel 1:</strong><br>
-<img src="../assets/appinventor/appinventor1.png" height="150" width="750">
+<img src="../assets/appinventor/appinventor1.png" height="382" width="953">
 </td>
 </tr>
 <tr>
 <td>
 <strong>📷 Görsel 2:</strong><br>
-<img src="../assets/appinventor/appinventor2.png" height="150" width="750">
+<img src="../assets/appinventor/appinventor2.png" height="382" width="953">
 </td>
 </tr>
 </table>
-</td>
-<td>
-<strong>📷 Görsel 3:</strong><br>
-<img src="../assets/appinventor/UrsPahoMqttClient1.jpg" height="450" width="60">
 </td>
 </tr>
 </table>
