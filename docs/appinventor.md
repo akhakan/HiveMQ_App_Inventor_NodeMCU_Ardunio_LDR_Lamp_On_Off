@@ -5,22 +5,28 @@ Bu doküman App Inventor içinde yapılan tasarım ve blok yapısını açıklar
 ## 🟦 1) Arayüz Tasarımı
 
 <table>
-    <tr>
-        <td>
-            Ekranda bulunan bileşenler:
+  <tr>
+    <td style="vertical-align: top; padding-right: 20px;">
 
-            * Lamba resmi (Image)
-            * LDR değerini gösteren Label
-            * MQTT Client component (UrsPahoMqttClient)
-            * Connect / Disconnect butonları
-        </td>
-        <td>
-            📷 Görsel:
+      <p><strong>Ekranda bulunan bileşenler:</strong></p>
+      <ul>
+        <li>Lamba resmi (Image)</li>
+        <li>LDR değerini gösteren Label</li>
+        <li>MQTT Client component (UrsPahoMqttClient)</li>
+        <li>Connect / Disconnect butonları</li>
+      </ul>
 
-            <img src="../assets/appinventor/app.png" height="450" width="252">
-        </td>
-    </tr>
+    </td>
+
+    <td style="vertical-align: top;">
+
+      <p><strong>📷 Görsel:</strong></p>
+      <img src="../assets/appinventor/app.png" height="450" width="252">
+
+    </td>
+  </tr>
 </table>
+
 
 ## 🟦 2) Blok Kodlama
 
