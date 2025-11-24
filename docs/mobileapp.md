@@ -34,8 +34,6 @@ Işık Şiddeti: 412
 
 ## 🟦 3) Uygulama Videosu
 
-## 🎥 Uygulama Videosu
-
 ![Uygulama Videosu](../assets/mobile/app_video.gif)
 
 
