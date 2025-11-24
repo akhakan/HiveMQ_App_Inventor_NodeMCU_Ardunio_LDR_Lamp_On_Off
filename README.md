@@ -12,10 +12,10 @@
 </ul>
 </td>
 <td>
-<img src="assets/appinventor/app.png" height="585" width="328">
+<img src="assets/appinventor/app.png" height="675" width="378">
 </td>
 <td>
-<img src="assets/hardware/nodeMCU.png" height="585" width="555">
+<img src="assets/hardware/nodeMCU.png" height="675" width="640">
 </td>
 </tr>
 </table>
