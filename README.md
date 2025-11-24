@@ -1,5 +1,24 @@
 # NodeMCU – App Inventor – HiveMQ Akıllı Aydınlatma Projesi
 
+<table>
+<tr>
+<td>
+Bu proje; **NodeMCU**, **LDR** sensörü, **LED lamba**, **HiveMQ MQTT brokeri** ve **App Inventor Android uygulaması** kullanılarak oluşturulmuş bir IoT uygulamasıdır.
+<li>Sensörden okunan **ışık şiddeti verileri** HiveMQ’ya gönderilir.</li>
+<li>App Inventor uygulaması HiveMQ üzerinden bu değeri **canlı olarak** takip eder.</li>
+<li>Uygulamadaki **lamba ikonuna basıldığında**, MQTT üzerinden NodeMCU’ya komut gönderilir ve fiziksel LED açılır/kapanır.</li>
+</ul>
+</td>
+<td>
+<img src="../assets/appinventor/app.png" height="450" width="252">
+</td>
+<td>
+<img src="../assets/hardware/nodeMCU.png" height="450" width="427">
+</td>
+</tr>
+</table>
+
+
 Bu proje; **NodeMCU**, **LDR** sensörü, **LED lamba**, **HiveMQ MQTT brokeri** ve **App Inventor Android uygulaması** kullanılarak oluşturulmuş bir IoT uygulamasıdır.
 
 * Sensörden okunan **ışık şiddeti verileri** HiveMQ’ya gönderilir.
@@ -39,7 +58,3 @@ Aşağıdaki teknik dokümanlarla proje adım adım açıklanmıştır:
 /src/               → Arduino/ESP8266 kodları
 /app/               → App Inventor .aia dosyası
 ```
-
-## 📄 Lisans
-
-MIT — Serbestçe kullanabilirsiniz.
