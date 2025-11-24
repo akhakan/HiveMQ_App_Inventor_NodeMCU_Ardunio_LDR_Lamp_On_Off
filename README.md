@@ -2,11 +2,13 @@
 
 <table>
 <tr>
-<td>
-Bu proje; **NodeMCU**, **LDR** sensörü, **LED lamba**, **HiveMQ MQTT brokeri** ve **App Inventor Android uygulaması** kullanılarak oluşturulmuş bir IoT uygulamasıdır.
-<li>Sensörden okunan **ışık şiddeti verileri** HiveMQ’ya gönderilir.</li>
-<li>App Inventor uygulaması HiveMQ üzerinden bu değeri **canlı olarak** takip eder.</li>
-<li>Uygulamadaki **lamba ikonuna basıldığında**, MQTT üzerinden NodeMCU’ya komut gönderilir ve fiziksel LED açılır/kapanır.</li>
+<td style="vertical-align: top; padding-left: 20px;">
+<p>Bu proje; <strong>NodeMCU</strong>, <strong>LDR</strong> sensörü, <strong>LED lamba</strong>, 
+<strong>HiveMQ MQTT brokeri</strong> ve <strong>App Inventor Android uygulaması</strong> kullanılarak oluşturulmuş bir IoT uygulamasıdır.</p>
+<ul style="margin-left:16px; list-style-type: disc;">
+<li>Sensörden okunan <strong>ışık şiddeti verileri</strong> HiveMQ’ya gönderilir.</li>
+<li>App Inventor uygulaması bu değeri <strong>canlı olarak</strong> takip eder.</li>
+<li><strong>Lamba ikonuna basıldığında</strong>, MQTT üzerinden NodeMCU’ya komut gönderilir ve LED açılır/kapanır.</li>
 </ul>
 </td>
 <td>
@@ -17,13 +19,6 @@ Bu proje; **NodeMCU**, **LDR** sensörü, **LED lamba**, **HiveMQ MQTT brokeri**
 </td>
 </tr>
 </table>
-
-
-Bu proje; **NodeMCU**, **LDR** sensörü, **LED lamba**, **HiveMQ MQTT brokeri** ve **App Inventor Android uygulaması** kullanılarak oluşturulmuş bir IoT uygulamasıdır.
-
-* Sensörden okunan **ışık şiddeti verileri** HiveMQ’ya gönderilir.
-* App Inventor uygulaması HiveMQ üzerinden bu değeri **canlı olarak** takip eder.
-* Uygulamadaki **lamba ikonuna basıldığında**, MQTT üzerinden NodeMCU’ya komut gönderilir ve fiziksel LED açılır/kapanır.
 
 ## 🚀 Özellikler
 
