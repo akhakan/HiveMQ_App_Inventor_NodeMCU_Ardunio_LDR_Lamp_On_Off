@@ -9,6 +9,9 @@ Bu dosya, App Inventor ile oluşturulan mobil uygulamanın çalışma görüntü
 
 📷 Görseller:
 
+<img src="../assets/mobile/turnoff.png" height="200" width="123">
+<img src="../assets/mobile/turnon.png" height="200" width="123">
+
 ![LED Kapalı](../assets/mobile/turnoff.png)
 ![LED Açık](../assets/mobile/turnon.png)
 
