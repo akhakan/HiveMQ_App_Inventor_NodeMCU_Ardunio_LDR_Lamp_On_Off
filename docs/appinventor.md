@@ -38,7 +38,7 @@ Bu doküman App Inventor içinde yapılan tasarım ve blok yapısını açıklar
 
 <table>
 <tr>
-<td width="869">
+<td width="789">
 <strong>MQTT Bağlantısı (UrsPahoMqttClient1 özellikleri doldurulacaktır)</strong>
 <ul>
 <li>Sunucu adresi → HiveMQ cluster host<br/><strong>Broker :</strong> ****************************.s1.eu.hivemq.cloud</li>
