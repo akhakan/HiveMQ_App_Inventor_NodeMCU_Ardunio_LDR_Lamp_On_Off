@@ -10,12 +10,17 @@ Bu doküman App Inventor içinde yapılan tasarım ve blok yapısını açıklar
 
 <strong>Ekranda bulunan bileşenler:</strong>
 <ul>
-<li>Lamba resmi (Image)</li>
-<li>LDR değerini gösteren Label</li>
-<li>MQTT Client component (UrsPahoMqttClient)</li>
-<li>Connect / Disconnect butonları</li>
+<li>MQTT AMP11A PROJECT proje başlığını gösteren etiket (Label1)</li>
+<li>Lamba resmi (Image1)</li>
+<li>LAMBA KAPALI / LAMBA AÇIK  değerlerini gösteren etiket (Label2)</li>
+<li>LDR resmi (Image2)</li>
+<li>IŞIK ŞİDDETİ başlığımı gösteren etiket (Label3)</li>
+<li>LDR değerini gösteren etiket (Label4)</li>
+<li>Bağlan / Bağlantıyı Kes butonları</li>
+<li>MQTT Client componenti (UrsPahoMqttClient1)</li>
+<li>Uyarılar göstermek için Notifier componenti (Notifier1)</li>
+<li>(Son 2 komponent görselde gözükmemektedir, gizlidir.)</li>
 </ul>
-
 </td>
 <td>
 
