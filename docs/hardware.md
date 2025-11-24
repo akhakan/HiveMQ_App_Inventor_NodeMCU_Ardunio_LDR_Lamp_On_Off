@@ -33,4 +33,5 @@ LDR ve 10k direnç seri bağlı → ara noktası A0 girişine gidiyor.
 ## 📷 Devre Görseli
 
 Görseli şu yere yükleyin:
-`assets/hardware/nodeMCU.png`
+
+![Devre Görseli](../assets/hardware/nodeMCU.png)

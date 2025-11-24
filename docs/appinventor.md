@@ -12,7 +12,7 @@ Ekranda bulunan bileşenler:
 * Connect / Disconnect butonları
 
 📷 Görsel:
-`assets/appinventor/app.png`
+![Arayüz Tasarımı](../assets/appinventor/app.png)
 
 ## 🟦 2) Blok Kodlama
 
@@ -36,7 +36,7 @@ Image tıklandığında:
 * Eğer açık → `"OFF"` publish edilir
 
 📷 Blok görselleri:
-`assets/appinventor/UrsPahoMqttClient1.ConnectionStateChanged.png`
-`assets/appinventor/UrsPahoMqttClient1.MessageRecieved.png`
-`assets/appinventor/Buton1.Click.png`
-`assets/appinventor/Image1.Click.png`
+![UrsPahoMqttClient1 ConnectionStateChanged](../assets/appinventor/UrsPahoMqttClient1.ConnectionStateChanged.png)
+![UrsPahoMqttClient1 MessageRecieved](../assets/appinventor/UrsPahoMqttClient1.MessageRecieved.png)
+![Buton1 Click](../assets/appinventor/Buton1.Click.png)
+![Image1 Click](../assets/appinventor/Image1.Click.png)

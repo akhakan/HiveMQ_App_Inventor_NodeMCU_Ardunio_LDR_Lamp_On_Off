@@ -34,4 +34,4 @@ App Inventor’dan gelen mesaj:
 
 ## 📷 Kod ekran görüntüsü
 
-`assets/arduino/arduino_code.png`
+![arduino kodu](../assets/arduino/arduino_code.png)

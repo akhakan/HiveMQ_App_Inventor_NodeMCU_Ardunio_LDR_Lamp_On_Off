@@ -8,8 +8,10 @@ Bu dosya, App Inventor ile oluşturulan mobil uygulamanın çalışma görüntü
 * Sarı ampul → LED açık
 
 📷 Görseller:
-`assets/mobile/turnoff.png`
-`assets/mobile/turnon.png`
+
+![LED Kapalı](../assets/mobile/turnoff.png)
+![LED Açık](../assets/mobile/turnon.png)
+
 
 ## 🟦 2) LDR Sensör Verisi
 
@@ -21,9 +23,11 @@ Işık Şiddeti: 412
 ```
 
 📷 Görsel:
-`assets/mobile/app_1.png`
-`assets/mobile/app_2.png`
-`assets/mobile/app_3.png`
+
+![App 1](../assets/mobile/app_1.png)
+![App 2](../assets/mobile/app_2.png)
+![App 3](../assets/mobile/app_3.png)
+
 
 ## 🟦 3) Uygulama Videosu
 
