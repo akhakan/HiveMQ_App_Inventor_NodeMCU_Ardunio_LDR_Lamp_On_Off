@@ -36,6 +36,14 @@ Bu doküman App Inventor içinde yapılan tasarım ve blok yapısını açıklar
 
 ### MQTT Bağlantısı
 
+MQTT bağlantısını gerçekleştirebilmek için UrsPahoMqttClient.aix eklentisinin App Inventor projesine eklenmesi gerekmektedir.
+Öncelikle eklentiyi indirmek için şu bağlantıya tıklayın:
+[UrsPahoMqttClient.aix indirme sayfası](https://ullisroboterseite.de/android-AI2-PahoMQTT.html)
+
+İndirme tamamlandıktan sonra, Görsel 2’de gösterildiği gibi App Inventor arayüzünde:
+
+Extensions → Import Extension → Choose File adımlarını izleyerek .aix dosyasını projenize dahil edebilirsiniz.
+
 <table>
 <tr>
 <td width="875">
