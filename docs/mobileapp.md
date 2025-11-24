@@ -1,0 +1,51 @@
+# Mobil Uygulama – Ekran Görüntüleri ve Video
+
+Bu dosya, App Inventor ile oluşturulan mobil uygulamanın çalışma görüntülerini içerir.
+
+## 🟦 1) LED Durum Görselleri
+
+* Gri ampul → LED kapalı
+* Sarı ampul → LED açık
+
+📷 Görseller:
+`assets/mobile/turnoff.png`
+`assets/mobile/turnon.png`
+
+## 🟦 2) LDR Sensör Verisi
+
+Uygulama içinde canlı olarak güncellenir.
+Örnek:
+
+```
+Işık Şiddeti: 412
+```
+
+📷 Görsel:
+`assets/mobile/app_1.png`
+`assets/mobile/app_2.png`
+`assets/mobile/app_3.png`
+
+## 🟦 3) Uygulama Videosu
+
+## 🎥 Uygulama Videosu
+
+<video src="../assets/mobile/app_video.mp4" width="360" controls>
+Tarayıcınız video oynatmayı desteklemiyor.
+</video>
+
+➡️ [Uygulama videosunu izlemek için tıklayın](../assets/mobile/app_video.mp4)
+
+`https://github.com/kullanici/proje/blob/main/assets/mobile/app_video.mp4`
+
+
+Video açıklaması:
+
+* Lamba ikonuna tıklayınca LED yanıyor/sönüyor
+* Ekrandaki sensör değeri gerçek zamanlı değişiyor
+
+## 🟦 4) Tam Uygulama Akışı
+
+1. Uygulama açılır → MQTT’ye bağlanır
+2. LDR değerleri akar
+3. Lamba ikonuna basılır → LED değişir
+4. HiveMQ üzerinden tüm iletişim canlı gerçekleşir
