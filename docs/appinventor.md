@@ -10,16 +10,16 @@ Bu doküman App Inventor içinde yapılan tasarım ve blok yapısını açıklar
 
 <strong>Ekranda bulunan bileşenler:</strong>
 <ul>
-<li>MQTT AMP11A PROJECT proje başlığını gösteren etiket (Label1)</li>
-<li>Lamba resmi (Image1)</li>
-<li>LAMBA KAPALI / LAMBA AÇIK  değerlerini gösteren etiket (Label2)</li>
-<li>LDR resmi (Image2)</li>
-<li>IŞIK ŞİDDETİ başlığımı gösteren etiket (Label3)</li>
-<li>LDR değerini gösteren etiket (Label4)</li>
-<li>Bağlan / Bağlantıyı Kes butonları</li>
-<li>MQTT Client componenti (UrsPahoMqttClient1)</li>
-<li>Uyarılar göstermek için Notifier componenti (Notifier1)</li>
-<li>(Son 2 komponent görselde gözükmemektedir, gizlidir.)</li>
+<li>MQTT AMP11A PROJECT yazan başlığını gösteren etiket <strong>(Label1)</strong></li>
+<li>Lamba resmi <strong>(Image1)</strong></li>
+<li>LAMBA KAPALI / LAMBA AÇIK  değerlerini gösteren etiket <strong>(Label2)</strong></li>
+<li>LDR resmi <strong>(Image2)</strong></li>
+<li>IŞIK ŞİDDETİ başlığını gösteren etiket <strong>(Label3)</strong></li>
+<li>LDR değerini gösteren etiket <strong>(Label4)</strong></li>
+<li>Bağlan / Bağlantıyı Kes butonu <strong>(Button1)</strong></li>
+<li>MQTT Client komponenti <strong>(UrsPahoMqttClient1)</strong></li>
+<li>Uyarılar göstermek için Notifier komponenti <strong>(Notifier1)</strong></li>
+<li><strong>(Son 2 komponent görselde gözükmemektedir, gizlidir.)</strong></li>
 </ul>
 </td>
 <td>
@@ -36,10 +36,24 @@ Bu doküman App Inventor içinde yapılan tasarım ve blok yapısını açıklar
 
 ### MQTT Bağlantısı
 
-- Sunucu adresi → HiveMQ cluster host
-- Port → 8883
-- Kullanıcı adı → oluşturulan credential
-- Şifre → credential password
+<table>
+<tr>
+<td>
+<strong>MQTT Bağlantısı (UrsPahoMqttClient1 özellikleri doldurulacaktır)</strong>
+<ul>
+<li>Sunucu adresi → HiveMQ cluster host<br/><strong>Broker :</strong> ****************************.s1.eu.hivemq.cloud</li>
+<li>ClientID → Rastgele(random) bir isim verilebilir.<br/><strong>ClientID :</strong> AI2-Phone</li>
+<li>Port(TLS) → 8883<br/><strong>Port :</strong> 8883</li>
+<li>Kullanıcı adı → oluşturulan credential username<br/><strong>UserName :</strong> ****************</li>
+<li>Şifre → credential userpassword<br/><strong>UserPassword :</strong> ****************</li>
+</ul>
+</td>
+<td>
+<strong>📷 Görsel:</strong><br>
+<img src="../assets/appinventor/UrsPahoMqttClient1.jpg" height="450" width="80">
+</td>
+</tr>
+</table>
 
 ### LDR Değerini Dinleme
 
