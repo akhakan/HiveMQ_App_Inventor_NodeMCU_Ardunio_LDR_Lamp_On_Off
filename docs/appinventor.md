@@ -38,7 +38,7 @@ Bu doküman App Inventor içinde yapılan tasarım ve blok yapısını açıklar
 
 <table>
 <tr>
-<td width="789">
+<td width="780">
 <strong>MQTT Bağlantısı (UrsPahoMqttClient1 özellikleri doldurulacaktır)</strong>
 <ul>
 <li>Sunucu adresi → HiveMQ cluster host<br/><strong>Broker :</strong> ****************************.s1.eu.hivemq.cloud</li>
@@ -48,13 +48,13 @@ Bu doküman App Inventor içinde yapılan tasarım ve blok yapısını açıklar
 <li>Şifre → credential userpassword<br/><strong>UserPassword :</strong> ****************</li>
 </ul>
 </td>
-<td width="84">
+<td width="90">
 <strong>📷 Görsel 1:</strong><br>
 <img src="../assets/appinventor/UrsPahoMqttClient1.jpg" height="473" width="84">
 </td>
 </tr>
-<tr>
-<td>
+</table>
+
 <table>
 <tr>
 <td>
@@ -69,9 +69,8 @@ Bu doküman App Inventor içinde yapılan tasarım ve blok yapısını açıklar
 </td>
 </tr>
 </table>
-</td>
-</tr>
-</table>
+
+
 
 ### LDR Değerini Dinleme
 
