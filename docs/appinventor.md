@@ -36,7 +36,7 @@ Bu doküman App Inventor içinde yapılan tasarım ve blok yapısını açıklar
 
 ### MQTT Bağlantısı
 
-<table>
+<table width="953">
 <tr>
 <td>
 <strong>MQTT Bağlantısı (UrsPahoMqttClient1 özellikleri doldurulacaktır)</strong>
