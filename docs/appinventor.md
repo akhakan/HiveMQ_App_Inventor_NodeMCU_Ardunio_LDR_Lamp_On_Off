@@ -13,7 +13,7 @@ Ekranda bulunan bileşenler:
 
 📷 Görsel:
 
- <img src="../assets/appinventor/app.jpg" height="450" width="252">
+ <img src="../assets/appinventor/app.png" height="450" width="252">
 
 ## 🟦 2) Blok Kodlama
 
