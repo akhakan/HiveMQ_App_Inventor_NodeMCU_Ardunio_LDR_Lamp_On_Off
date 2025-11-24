@@ -40,11 +40,6 @@ Aşağıdaki teknik dokümanlarla proje adım adım açıklanmıştır:
 | HiveMQ kurulum rehberi           | Üyelik, cluster, credential, web client | [hivemq.md](./docs/hivemq.md)           |
 | Mobil uygulama ekran görüntüleri | Açma-kapama, sensör verisi, video       | [mobileapp.md](./docs/mobileapp.md)     |
 
-## 🎥 Demo Videosu
-
-🟡 Video: Mobil uygulama üzerinden LED aç/kapa + canlı sensör verisi
-(YouTube linki ekleyebilirsiniz)
-
 ## 📦 Proje Klasör Yapısı
 
 ```
