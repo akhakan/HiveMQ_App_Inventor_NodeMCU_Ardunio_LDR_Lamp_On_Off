@@ -4,7 +4,7 @@ Bu dosya NodeMCU’nun HiveMQ’ya bağlanması, LDR okumaları göndermesi ve A
 
 ## 🟦 1) Kod Dosyası
 
-Kodu Ardunio IDE'ye attıktan sonra: ***** içeren kısımlar yazılımı yükleyen kişinin değerleriyle değiştirilmelidir.
+Kod Ardunio IDE'ye atıldıktan sonra: ***** içeren kısımlar yazılımı yükleyen kişinin değerleriyle değiştirilmelidir.
 
 ```cpp
 // ---- WiFi Ayarları ----

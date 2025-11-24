@@ -12,7 +12,8 @@ Ekranda bulunan bileşenler:
 * Connect / Disconnect butonları
 
 📷 Görsel:
-![Arayüz Tasarımı](../assets/appinventor/app.png)
+
+ <img src="../assets/appinventor/app.jpg" height="450" width="252">
 
 ## 🟦 2) Blok Kodlama
 
