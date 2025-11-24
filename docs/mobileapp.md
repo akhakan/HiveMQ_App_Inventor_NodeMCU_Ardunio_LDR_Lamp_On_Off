@@ -9,11 +9,10 @@ Bu dosya, App Inventor ile oluşturulan mobil uygulamanın çalışma görüntü
 
 📷 Görseller:
 
-<img src="../assets/mobile/turnoff.png" height="200" width="123">
-<img src="../assets/mobile/turnon.png" height="200" width="123">
-
-![LED Kapalı](../assets/mobile/turnoff.png)
-![LED Açık](../assets/mobile/turnon.png)
+<div style="display:flex; gap:10px;">
+    <img src="../assets/mobile/turnoff.png" height="150" width="93">
+    <img src="../assets/mobile/turnon.png" height="150" width="93">
+</div>
 
 
 ## 🟦 2) LDR Sensör Verisi
