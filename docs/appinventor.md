@@ -48,28 +48,27 @@ Bu doküman App Inventor içinde yapılan tasarım ve blok yapısını açıklar
 <li>Şifre → credential userpassword<br/><strong>UserPassword :</strong> ****************</li>
 </ul>
 </td>
-
+<td>
+<strong>📷 Görsel 1:</strong><br>
+<img src="../assets/appinventor/UrsPahoMqttClient1.jpg" height="473" width="84">
+</td>
 </tr>
 <tr>
 <td>
 <table>
 <tr>
 <td>
-<strong>📷 Görsel 1:</strong><br>
+<strong>📷 Görsel 2:</strong><br>
 <img src="../assets/appinventor/appinventor1.png" height="382" width="953">
 </td>
 </tr>
 <tr>
 <td>
-<strong>📷 Görsel 2:</strong><br>
+<strong>📷 Görsel 3:</strong><br>
 <img src="../assets/appinventor/appinventor2.png" height="382" width="953">
 </td>
 </tr>
 </table>
-</td>
-<td colspan=2>
-<strong>📷 Görsel 3:</strong><br>
-<img src="../assets/appinventor/UrsPahoMqttClient1.jpg" height="473" width="84">
 </td>
 </tr>
 </table>
