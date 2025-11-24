@@ -27,16 +27,16 @@ Işık Şiddeti: 412
 📷 Görsel:
 
 <div style="display:flex; gap:10px;">
-    <img src="../assets/mobile/app_1.png" height="300" width="135">
-    <img src="../assets/mobile/app_2.png" height="300" width="135">
-    <img src="../assets/mobile/app_3.png" height="300" width="135">
+    <img src="../assets/mobile/app_1.jpg" height="300" width="135">
+    <img src="../assets/mobile/app_2.jpg" height="300" width="135">
+    <img src="../assets/mobile/app_3.jpg" height="300" width="135">
 </div>
 
 ## 🟦 3) Uygulama Videosu
 
 ## 🎥 Uygulama Videosu
 
-![Uygulama Videosu](assets/mobile/app_video.gif)
+![Uygulama Videosu](../assets/mobile/app_video.gif)
 
 
 Video açıklaması:
