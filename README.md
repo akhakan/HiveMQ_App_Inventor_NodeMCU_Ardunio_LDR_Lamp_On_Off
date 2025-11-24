@@ -10,10 +10,10 @@ Bu proje; **NodeMCU**, **LDR** sensörü, **LED lamba**, **HiveMQ MQTT brokeri**
 </ul>
 </td>
 <td>
-<img src="assets/appinventor/app.png" height="630" width="353">
+<img src="assets/appinventor/app.png" height="585" width="328">
 </td>
 <td>
-<img src="assets/hardware/nodeMCU.png" height="630" width="598">
+<img src="assets/hardware/nodeMCU.png" height="585" width="555">
 </td>
 </tr>
 </table>
