@@ -26,22 +26,17 @@ Işık Şiddeti: 412
 
 📷 Görsel:
 
-![App 1](../assets/mobile/app_1.png)
-![App 2](../assets/mobile/app_2.png)
-![App 3](../assets/mobile/app_3.png)
-
+<div style="display:flex; gap:10px;">
+    <img src="../assets/mobile/app_1.png" height="300" width="135">
+    <img src="../assets/mobile/app_2.png" height="300" width="135">
+    <img src="../assets/mobile/app_3.png" height="300" width="135">
+</div>
 
 ## 🟦 3) Uygulama Videosu
 
 ## 🎥 Uygulama Videosu
 
-<video src="../assets/mobile/app_video.mp4" width="360" controls>
-Tarayıcınız video oynatmayı desteklemiyor.
-</video>
-
-➡️ [Uygulama videosunu izlemek için tıklayın](../assets/mobile/app_video.mp4)
-
-`https://github.com/kullanici/proje/blob/main/assets/mobile/app_video.mp4`
+![Uygulama Videosu](assets/mobile/app_video.gif)
 
 
 Video açıklaması:
