@@ -4,25 +4,32 @@ Bu doküman App Inventor içinde yapılan tasarım ve blok yapısını açıklar
 
 ## 🟦 1) Arayüz Tasarımı
 
-Ekranda bulunan bileşenler:
+<table>
+    <tr>
+        <td>
+            Ekranda bulunan bileşenler:
 
-* Lamba resmi (Image)
-* LDR değerini gösteren Label
-* MQTT Client component (UrsPahoMqttClient)
-* Connect / Disconnect butonları
+            * Lamba resmi (Image)
+            * LDR değerini gösteren Label
+            * MQTT Client component (UrsPahoMqttClient)
+            * Connect / Disconnect butonları
+        </td>
+        <td>
+            📷 Görsel:
 
-📷 Görsel:
-
- <img src="../assets/appinventor/app.png" height="450" width="252">
+            <img src="../assets/appinventor/app.png" height="450" width="252">
+        </td>
+    </tr>
+</table>
 
 ## 🟦 2) Blok Kodlama
 
 ### MQTT Bağlantısı
 
-* Sunucu adresi → HiveMQ cluster host
-* Port → 8883
-* Kullanıcı adı → oluşturulan credential
-* Şifre → credential password
+- Sunucu adresi → HiveMQ cluster host
+- Port → 8883
+- Kullanıcı adı → oluşturulan credential
+- Şifre → credential password
 
 ### LDR Değerini Dinleme
 
@@ -33,8 +40,8 @@ Gelen değer Label içinde güncellenir.
 
 Image tıklandığında:
 
-* Eğer kapalı → `"ON"` publish edilir
-* Eğer açık → `"OFF"` publish edilir
+- Eğer kapalı → `"ON"` publish edilir
+- Eğer açık → `"OFF"` publish edilir
 
 📷 Blok görselleri:
 ![UrsPahoMqttClient1 ConnectionStateChanged](../assets/appinventor/UrsPahoMqttClient1.ConnectionStateChanged.png)
