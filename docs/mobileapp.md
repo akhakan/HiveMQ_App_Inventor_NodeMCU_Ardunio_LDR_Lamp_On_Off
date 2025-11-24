@@ -27,9 +27,9 @@ Işık Şiddeti: 412
 📷 Görsel:
 
 <div style="display:flex; gap:10px;">
-    <img src="../assets/mobile/app_1.jpg" height="300" width="135">
-    <img src="../assets/mobile/app_2.jpg" height="300" width="135">
-    <img src="../assets/mobile/app_3.jpg" height="300" width="135">
+    <img src="../assets/mobile/app_1.jpg" height="450" width="202">
+    <img src="../assets/mobile/app_2.jpg" height="450" width="202">
+    <img src="../assets/mobile/app_3.jpg" height="450" width="202">
 </div>
 
 ## 🟦 3) Uygulama Videosu
